@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AR Digital | Get seen. Get clicked. Get customers.</title>
+<meta name="description" content="AR Digital is a digital marketing agency offering SEO, SMO, SEM, SMM, website designing and website development.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f3ff;--ink:#11102b;--blue:#3b3bff;--pink:#ff4d8d;--yel:#ffd23f;--mint:#20e3b2;--vio:#8b5cf6;--bd:2.5px solid var(--ink);--sh:6px 6px 0 var(--ink)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 'DM Sans',system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,h4,.logo{font-family:'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:-.03em;line-height:1}a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.ic{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.bar{position:fixed;top:0;left:0;right:0;height:5px;z-index:60;background:var(--pink);transform:scaleX(0);transform-origin:0 50%;border-bottom:2px solid var(--ink)}
+.cur{position:fixed;left:0;top:0;width:18px;height:18px;border-radius:50%;background:var(--pink);border:2px solid var(--ink);z-index:70;pointer-events:none;transition:width .2s,height .2s;margin:-9px 0 0 -9px}.cur.big{width:54px;height:54px;margin:-27px 0 0 -27px;opacity:.85}
+@media(hover:none){.cur{display:none}}
+header{position:fixed;top:16px;left:0;right:0;z-index:50;display:flex;justify-content:center;padding:0 14px}
+nav{display:flex;align-items:center;justify-content:space-between;gap:20px;width:min(1120px,100%);background:#fff;border:var(--bd);border-radius:99px;padding:9px 10px 9px 22px;box-shadow:4px 4px 0 var(--ink)}
+.logo{font-weight:800;font-size:1.45rem;display:flex;align-items:center;gap:9px}.lm{width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:.85rem;border:var(--bd)}
+nav ul{display:flex;gap:28px;list-style:none;font-weight:700;font-size:.95rem}nav ul a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:99px;font:700 1rem 'DM Sans';background:var(--yel);color:var(--ink);border:var(--bd);box-shadow:4px 4px 0 var(--ink);cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn.b{background:var(--blue);color:#fff}.btn.w{background:#fff}.btn.s{padding:11px 22px}.btn .ic{width:20px;height:20px}
+.hero{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:150px 0 80px}
+.tagp{display:inline-flex;gap:10px;align-items:center;background:#fff;border:var(--bd);border-radius:99px;padding:8px 18px;font-weight:700;font-size:.9rem;margin-bottom:26px;box-shadow:3px 3px 0 var(--ink)}.tagp i{width:10px;height:10px;border-radius:50%;background:var(--mint);border:2px solid var(--ink);animation:pl 1.6s infinite}
+@keyframes pl{50%{transform:scale(1.5)}}
+h1{font-size:clamp(3.2rem,8.2vw,7rem);font-weight:800}
+h1 span{display:inline-block;position:relative;z-index:0;opacity:0;transform:translateY(40px) rotate(3deg);animation:in .8s cubic-bezier(.2,.9,.2,1) forwards}
+h1 span:nth-child(2){animation-delay:.12s}h1 span:nth-child(3){animation-delay:.24s}
+@keyframes in{to{opacity:1;transform:none}}
+h1 .m1{color:var(--blue)}h1 .m2::after{content:"";position:absolute;left:-2%;right:-2%;bottom:6%;height:.28em;background:var(--yel);z-index:-1;transform:skewX(-8deg)}h1 .m3{color:var(--pink)}
+.sub{font-size:1.3rem;margin:28px 0 34px;max-width:30em}
+.rot{display:inline-block;height:1.3em;overflow:hidden;vertical-align:bottom;font-weight:700;background:var(--yel);border:var(--bd);border-radius:10px;padding:0 12px;line-height:1.3em}
+.rot b{display:block;animation:rt 8s cubic-bezier(.7,0,.3,1) infinite}.rot b i{display:block;font-style:normal;height:1.3em}
+@keyframes rt{0%,20%{transform:translateY(0)}25%,45%{transform:translateY(-1.3em)}50%,70%{transform:translateY(-2.6em)}75%,95%{transform:translateY(-3.9em)}100%{transform:translateY(-5.2em)}}
+.cta{display:flex;gap:16px;flex-wrap:wrap}
+.scene{position:relative;aspect-ratio:1/1.05;max-width:560px;width:100%;margin-left:auto}
+.scene>*{position:absolute}
+.bgc{inset:4% 0 0 6%;background:var(--blue);border-radius:50%;border:var(--bd);box-shadow:var(--sh);overflow:hidden}
+.bgc::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 25% 20%,rgba(255,255,255,.28),transparent 45%)}
+.brw{left:-2%;top:12%;width:70%;background:#fff;border:var(--bd);border-radius:18px;box-shadow:var(--sh);transform:rotate(-5deg);overflow:hidden}
+.brw .t{display:flex;gap:6px;padding:10px 12px;border-bottom:var(--bd);background:var(--yel)}.brw .t i{width:10px;height:10px;border-radius:50%;border:2px solid var(--ink);background:#fff}
+.brw .c{padding:14px 16px}.brw small{font-weight:700;font-size:.72rem}.brw h4{font-size:1.7rem;margin:2px 0 10px}.brw h4 u{text-decoration:none;color:#0aa77f;font-size:.9rem}
+.bars{display:flex;align-items:flex-end;gap:8px;height:90px}.bars i{flex:1;height:var(--h);background:var(--blue);border:2px solid var(--ink);border-radius:6px 6px 0 0;transform-origin:bottom;transform:scaleY(0);animation:gr .8s calc(.6s + var(--n)*.1s) cubic-bezier(.2,.9,.2,1) forwards}.bars i:last-child{background:var(--pink)}
+@keyframes gr{to{transform:none}}
+.ph{right:2%;top:24%;width:39%;aspect-ratio:9/18;background:#fff;border:3px solid var(--ink);border-radius:30px;box-shadow:var(--sh);transform:rotate(7deg);padding:10px;overflow:hidden;display:flex;flex-direction:column;gap:8px}
+.ph .u{display:flex;gap:6px;align-items:center}.ph .u i{width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,var(--yel),var(--pink));border:2px solid var(--ink)}.ph .u s{flex:1;height:7px;border-radius:4px;background:#d9d6f5}
+.ph .im{flex:1;border-radius:14px;border:2px solid var(--ink);background:linear-gradient(160deg,var(--pink),var(--yel) 70%);position:relative;overflow:hidden}.ph .im::before{content:"";position:absolute;width:70%;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.5);right:-20%;top:-10%}.ph .im::after{content:"";position:absolute;width:44%;aspect-ratio:1;border-radius:50%;background:var(--blue);left:12%;bottom:10%;border:2px solid var(--ink)}
+.ph .a{display:flex;gap:8px;color:var(--pink)}.ph .a .ic{width:20px;height:20px}
+.stk{background:var(--yel);border:var(--bd);border-radius:16px;box-shadow:4px 4px 0 var(--ink);padding:10px 16px;font-weight:700;display:flex;gap:10px;align-items:center;white-space:nowrap;font-size:.9rem}.stk .ic{width:20px;height:20px}
+.s1{left:0;bottom:12%;background:var(--mint)}.s2{right:-3%;top:6%;background:var(--pink);color:#fff}.s3{right:6%;bottom:2%;background:#fff}
+.spin{left:-4%;top:-3%;width:26%;animation:sp 16s linear infinite}.spin text{font:800 19px 'Bricolage Grotesque';fill:var(--ink);letter-spacing:2px}.spin circle{fill:var(--yel);stroke:var(--ink);stroke-width:3}
+@keyframes sp{to{transform:rotate(360deg)}}
+.band{background:var(--yel);border-block:var(--bd);transform:rotate(-1.6deg);margin:20px -30px 40px;overflow:hidden;padding:20px 0}.band.p{background:var(--pink);transform:rotate(1.4deg);margin-top:-14px;color:#fff}
+.band div{display:flex;gap:34px;width:max-content;font:800 clamp(2rem,5vw,3.6rem)/1 'Bricolage Grotesque';letter-spacing:-.02em;animation:mq 30s linear infinite}.band.p div{animation-direction:reverse}
+.band span{white-space:nowrap;display:flex;gap:34px;align-items:center}.band em{font-style:normal;font-size:.7em}
+@keyframes mq{to{transform:translateX(-50%)}}
+.scrub{font:800 clamp(1.9rem,4.4vw,3.6rem)/1.12 'Bricolage Grotesque';letter-spacing:-.025em;max-width:1000px;margin:0 auto;padding:90px 0;text-align:center}
+.scrub .w{opacity:.16;transition:opacity .3s}.scrub .w.on{opacity:1}.scrub .w.h.on{color:var(--blue)}
+.hd{margin-bottom:46px;max-width:760px}.hd h2{font-size:clamp(2.4rem,5.4vw,4.4rem);font-weight:800}.hd p{margin-top:18px;font-size:1.15rem}
+.stack{padding:30px 0 90px}
+.sk{position:sticky;top:calc(98px + var(--i)*18px);margin-bottom:34px;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;border:var(--bd);border-radius:36px;box-shadow:var(--sh);padding:44px;min-height:430px;background:var(--c);color:var(--k,var(--ink))}
+.sk .lb{display:inline-flex;gap:10px;align-items:center;font-weight:700;border:2px solid currentColor;border-radius:99px;padding:6px 16px 6px 10px;margin-bottom:22px;font-size:.92rem}.sk .lb .ic{width:20px;height:20px}
+.sk h3{font-size:clamp(2rem,3.8vw,3.2rem);margin-bottom:16px}.sk p{max-width:32em;margin-bottom:26px;opacity:.92}
+.sk .btn{box-shadow:4px 4px 0 var(--ink)}
+.vz{position:relative;min-height:300px;display:grid;place-items:center}
+.cardw{background:#fff;color:var(--ink);border:var(--bd);border-radius:22px;box-shadow:var(--sh);padding:18px;width:min(340px,100%)}
+.rk{display:grid;gap:10px}.rk div{display:flex;align-items:center;gap:12px;border:2px solid var(--ink);border-radius:14px;padding:11px 14px;font-weight:700;font-size:.9rem}.rk b{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#e4e2fb;border:2px solid var(--ink);font-size:.85rem}
+.rk .top{background:var(--yel);transform:translateX(-14px) rotate(-2deg);box-shadow:4px 4px 0 var(--ink)}.rk .top b{background:var(--blue);color:#fff}
+.av{display:flex;gap:14px;align-items:center;margin-bottom:14px}.av i{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--yel),var(--pink));border:var(--bd)}.av b{display:block;font:800 1.1rem 'Bricolage Grotesque'}.av small{opacity:.7}
+.st3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center;margin-bottom:14px}.st3 div{border:2px solid var(--ink);border-radius:12px;padding:8px 2px;font:800 1rem 'Bricolage Grotesque'}.st3 small{display:block;font:500 .68rem 'DM Sans'}
+.ad small{font-weight:700;border:2px solid var(--ink);border-radius:6px;padding:0 6px;font-size:.7rem}.ad h4{font-size:1.25rem;margin:10px 0 4px;color:var(--blue)}.ad p{font-size:.85rem;margin:0 0 14px!important}
+.im2{height:150px;border-radius:14px;border:2px solid var(--ink);background:linear-gradient(135deg,var(--blue),var(--vio) 60%,var(--pink));position:relative;overflow:hidden;margin-bottom:12px}.im2::after{content:"";position:absolute;width:90px;height:90px;border-radius:50%;background:var(--yel);border:2px solid var(--ink);right:18px;bottom:-20px}
+.sw{display:flex;gap:10px;margin-bottom:14px}.sw i{flex:1;aspect-ratio:1;border-radius:50%;border:2px solid var(--ink)}.aa{font:800 4.2rem/1 'Bricolage Grotesque'}
+.cd{font:500 .84rem/1.9 ui-monospace,Menlo,monospace;background:var(--ink);color:#cfd0ff;border-radius:14px;padding:16px}.cd .p{color:var(--pink)}.cd .y{color:var(--yel)}.cd .m{color:var(--mint)}
+.fl{position:absolute;z-index:2;animation:bob 4s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-10px) rotate(2deg)}}
+.cnt{background:var(--blue);color:#fff;border-block:var(--bd);padding:100px 0;position:relative;overflow:hidden}
+.cnt::before,.cnt::after{content:"";position:absolute;border:var(--bd);border-radius:50%}.cnt::before{width:420px;height:420px;background:var(--pink);right:-140px;top:-160px}.cnt::after{width:240px;height:240px;background:var(--yel);left:-80px;bottom:-110px}
+.cg{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
+.cg div{background:#fff;color:var(--ink);border:var(--bd);border-radius:26px;box-shadow:var(--sh);padding:28px 24px;transition:transform .2s}.cg div:nth-child(odd){transform:rotate(-1.5deg)}.cg div:nth-child(even){transform:rotate(1.5deg)}.cg div:hover{transform:rotate(0) translateY(-6px)}
+.cg b{font:800 clamp(3.2rem,6vw,4.8rem)/1 'Bricolage Grotesque';display:block;letter-spacing:-.04em}.cg span{font-weight:700}
+.pills{display:flex;flex-wrap:wrap;gap:12px;margin-top:44px;position:relative}.pills span{display:flex;gap:10px;align-items:center;background:var(--yel);color:var(--ink);border:var(--bd);border-radius:99px;padding:10px 20px;font-weight:700;box-shadow:3px 3px 0 var(--ink)}.pills .ic{width:20px;height:20px}
+.show{padding:110px 0 60px;text-align:center}.show .hd{margin-inline:auto}
+.persp{perspective:1400px;max-width:980px;margin:0 auto}
+.b3{transform:rotateX(var(--rx,28deg)) scale(var(--sc,.92));transform-origin:50% 100%;background:#fff;border:var(--bd);border-radius:24px;box-shadow:0 16px 0 var(--ink);overflow:hidden;text-align:left;will-change:transform}
+.b3 .t{display:flex;gap:8px;align-items:center;padding:14px 18px;border-bottom:var(--bd);background:var(--yel)}.b3 .t i{width:13px;height:13px;border-radius:50%;border:2px solid var(--ink);background:#fff}.b3 .t span{margin-left:12px;flex:1;max-width:340px;background:#fff;border:2px solid var(--ink);border-radius:99px;padding:2px 16px;font-size:.82rem;font-weight:700}
+.sx{padding:30px}.sx nav{all:unset;display:flex;justify-content:space-between;align-items:center;margin-bottom:34px}.sx nav b{font:800 1.2rem 'Bricolage Grotesque'}.sx nav i{display:flex;gap:18px}.sx nav i s{width:46px;height:8px;border-radius:5px;background:#d9d6f5}
+.sh{display:grid;grid-template-columns:1.2fr 1fr;gap:26px;align-items:center}.sh h4{font-size:clamp(1.8rem,4vw,3.2rem);margin-bottom:14px}.sh h4 em{font-style:normal;background:var(--yel);padding:0 8px}.sh .l{height:10px;border-radius:5px;background:#d9d6f5;margin-bottom:9px}
+.sh .bt{display:inline-block;margin-top:14px;background:var(--blue);color:#fff;padding:11px 24px;border-radius:99px;font-weight:700;border:var(--bd)}
+.sh .hi{aspect-ratio:1.2;border-radius:22px;border:var(--bd);background:linear-gradient(135deg,var(--mint),var(--blue));position:relative;overflow:hidden}.hi::before{content:"";position:absolute;width:55%;aspect-ratio:1;border-radius:50%;background:var(--yel);border:var(--bd);right:8%;top:10%}.hi::after{content:"";position:absolute;width:42%;height:38%;background:var(--pink);border:var(--bd);border-radius:18px;left:8%;bottom:10%;transform:rotate(-8deg)}
+.sc3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}.sc3 i{height:80px;border-radius:16px;border:var(--bd)}.sc3 i:nth-child(1){background:var(--yel)}.sc3 i:nth-child(2){background:var(--pink)}.sc3 i:nth-child(3){background:var(--mint)}
+.proc{padding:100px 0}.pg{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.pc{border:var(--bd);border-radius:28px;padding:30px 26px;box-shadow:var(--sh);transition:transform .25s;min-height:290px;display:flex;flex-direction:column}.pc:nth-child(1){background:var(--yel);transform:rotate(-2deg)}.pc:nth-child(2){background:var(--pink);color:#fff;transform:rotate(1.5deg)}.pc:nth-child(3){background:var(--mint);transform:rotate(-1.2deg)}.pc:nth-child(4){background:var(--vio);color:#fff;transform:rotate(2deg)}.pc:hover{transform:rotate(0) translateY(-8px)}
+.pc .ic{width:50px;height:50px;padding:11px;border-radius:16px;background:#fff;color:var(--ink);border:var(--bd);margin-bottom:auto}.pc h3{font-size:1.7rem;margin:34px 0 10px}
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;padding:40px 0 110px}.fq{display:grid;gap:14px}
+details{background:#fff;border:var(--bd);border-radius:20px;padding:0 24px;box-shadow:4px 4px 0 var(--ink);transition:background .2s}details[open]{background:var(--yel)}
+summary{list-style:none;cursor:pointer;padding:20px 0;font:800 1.2rem 'Bricolage Grotesque';display:flex;justify-content:space-between;gap:14px;align-items:center;letter-spacing:-.01em}summary::-webkit-details-marker{display:none}summary .ic{transition:transform .3s}details[open] summary .ic{transform:rotate(45deg)}details p{padding-bottom:20px}
+.cta2{background:var(--pink);border-block:var(--bd);padding:110px 0;position:relative;overflow:hidden}
+.cta2 h2{font-size:clamp(2.8rem,7vw,6rem);font-weight:800;color:#fff;margin-bottom:22px;text-shadow:4px 4px 0 var(--ink)}.cta2 .lead{color:#fff;font-size:1.2rem;margin-bottom:34px;max-width:26em;font-weight:500}
+.cg2{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;position:relative}
+.ci a{display:flex;gap:14px;align-items:center;font-weight:700;margin-bottom:14px;color:#fff}.ci .ic{width:48px;height:48px;padding:12px;border-radius:50%;background:var(--yel);color:var(--ink);border:var(--bd)}
+form{background:#fff;border:var(--bd);border-radius:30px;box-shadow:var(--sh);padding:32px;display:grid;gap:14px}label{font-weight:700;font-size:.88rem;display:grid;gap:6px}
+input,select,textarea{width:100%;background:var(--bg);border:var(--bd);border-radius:14px;padding:13px 16px;font:inherit;color:var(--ink)}input:focus,select:focus,textarea:focus{outline:0;background:#fff;box-shadow:3px 3px 0 var(--blue)}textarea{min-height:90px;resize:vertical}
+footer{background:var(--ink);color:#cfd0ee;padding:80px 0 0;overflow:hidden}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px}.fg .logo{color:#fff}.fg p{margin-top:16px;max-width:30ch}.fg h4{color:#fff;font-size:1.1rem;margin-bottom:16px}.fg ul{list-style:none;display:grid;gap:10px}.fg a:hover{color:var(--yel)}
+.big{font:800 clamp(5rem,22vw,19rem)/.8 'Bricolage Grotesque';letter-spacing:-.06em;color:transparent;-webkit-text-stroke:2px #4a4a8a;margin:60px 0 -.08em;text-align:center;white-space:nowrap;user-select:none}
+.cp{border-top:1px solid #2b2a55;padding:22px 0;font-size:.88rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.rv{opacity:0;transform:translateY(50px) rotate(1deg);transition:opacity .8s,transform .8s cubic-bezier(.2,.9,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}
+@media(max-width:960px){nav ul{display:none}.hero{grid-template-columns:1fr;padding-top:120px}.scene{margin:20px auto 0}.sk,.cg2,.faq,.sh{grid-template-columns:1fr}.sk{padding:30px 24px;top:calc(84px + var(--i)*10px);min-height:0}.vz{min-height:0}.cg,.pg{grid-template-columns:1fr 1fr}.fg{grid-template-columns:1fr 1fr}.band{margin-inline:-40px}}
+@media(max-width:560px){.cg,.pg,.fg{grid-template-columns:1fr}.stk{font-size:.78rem}.pc{min-height:0}.scrub{padding:60px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}h1 span,.rv{opacity:1;transform:none}.bars i{transform:none}.scrub .w{opacity:1}.b3{transform:none}}
+</style></head><body>
+<div class="bar" id="bar"></div><div class="cur" id="cur"></div>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></symbol>
+<symbol id="heart" viewBox="0 0 24 24"><path d="M20.8 5.6a5.5 5.5 0 0 0-7.8 0L12 6.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 22l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+<symbol id="target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+<symbol id="mega" viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h2l8 4V6L6 10H4a1 1 0 0 0-1 1zM18 8.5a5 5 0 0 1 0 7"/></symbol>
+<symbol id="layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></symbol>
+<symbol id="code" viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+<symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="zap" viewBox="0 0 24 24"><path d="M13 2L3 14h8l-1 8 10-12h-8z"/></symbol>
+<symbol id="chart" viewBox="0 0 24 24"><path d="M3 3v18h18M7 15l4-4 3 3 5-6"/></symbol>
+<symbol id="file" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-5.4A8 8 0 1 1 21 12z"/></symbol>
+<symbol id="star" viewBox="0 0 24 24"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18l-6.5 4 1.7-7.4-5.7-5 7.5-.7z"/></symbol>
+<symbol id="share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></symbol>
+</defs></svg>
+
+<header><nav><a class="logo" href="#top"><span class="lm">AR</span>Digital</a>
+<ul><li><a href="#services">Services</a></li><li><a href="#work">Work</a></li><li><a href="#process">Process</a></li><li><a href="#faq">FAQ</a></li></ul>
+<a class="btn b s" href="#contact">Free audit <svg class="ic"><use href="#arrow"/></svg></a></nav></header>
+
+<main id="top">
+<div class="wrap hero">
+<div>
+<span class="tagp"><i></i>Digital marketing agency</span>
+<h1><span class="m1">Get seen.</span> <span class="m2">Get clicked.</span> <span class="m3">Get customers.</span></h1>
+<p class="sub">Expert <span class="rot"><b><i>SEO</i><i>Social media</i><i>Google Ads</i><i>Websites</i><i>SEO</i></b></span> for brands that want more leads, more sales and more attention.</p>
+<div class="cta"><a class="btn b" href="#contact">Start growing <svg class="ic"><use href="#arrow"/></svg></a><a class="btn w" href="#services">See services</a></div>
+</div>
+<div class="scene" id="scene">
+<div class="bgc" data-m="8"></div>
+<div class="brw" data-m="18"><div class="t"><i></i><i></i><i></i></div><div class="c"><small>Organic traffic</small><h4>48.2K <u>+248%</u></h4><div class="bars"><i style="--h:30%;--n:0"></i><i style="--h:42%;--n:1"></i><i style="--h:38%;--n:2"></i><i style="--h:60%;--n:3"></i><i style="--h:78%;--n:4"></i><i style="--h:100%;--n:5"></i></div></div></div>
+<div class="ph" data-m="30"><div class="u"><i></i><s></s></div><div class="im"></div><div class="a"><svg class="ic"><use href="#heart"/></svg><svg class="ic"><use href="#chat"/></svg><svg class="ic"><use href="#share"/></svg></div></div>
+<div class="stk s1" data-m="42"><svg class="ic"><use href="#search"/></svg>Rank #1 on Google</div>
+<div class="stk s2" data-m="50"><svg class="ic"><use href="#heart"/></svg>12.4K new fans</div>
+<div class="stk s3" data-m="24"><svg class="ic"><use href="#zap"/></svg>+36 leads today</div>
+<svg class="spin" viewBox="0 0 200 200" data-m="12"><defs><path id="cp" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs><circle cx="100" cy="100" r="98"/><text><textPath href="#cp">RANK • ENGAGE • CONVERT • GROW • </textPath></text></svg>
+</div></div>
+
+<div class="band" aria-hidden="true"><div id="m1"><span>SEO <em>✦</em> SMO <em>✦</em> SEM <em>✦</em> SMM <em>✦</em> Web Design <em>✦</em> Web Development <em>✦</em></span><span>SEO <em>✦</em> SMO <em>✦</em> SEM <em>✦</em> SMM <em>✦</em> Web Design <em>✦</em> Web Development <em>✦</em></span></div></div>
+
+<div class="wrap"><p class="scrub" id="scrub">We do not just run campaigns. We build growth engines that get your brand found on Google, loved on social media and trusted on a website that converts.</p></div>
+
+<section id="services" class="wrap">
+<div class="hd rv"><h2>Six ways we grow your business</h2><p>Scroll through our services. Use one, or stack them for bigger results.</p></div>
+<div class="stack">
+<article class="sk" style="--i:0;--c:var(--blue);--k:#fff"><div><span class="lb"><svg class="ic"><use href="#search"/></svg>SEO</span><h3>Rank higher. Get found first.</h3><p>Technical fixes, keyword research and content that push your website up Google and bring steady, free traffic.</p><a class="btn" href="#contact">Boost my rankings <svg class="ic"><use href="#arrow"/></svg></a></div>
+<div class="vz"><div class="cardw rk"><div><b>3</b>competitor-one.com</div><div class="top"><b>1</b>yourbrand.com</div><div><b>2</b>competitor-two.com</div></div></div></article>
+<article class="sk" style="--i:1;--c:var(--pink);--k:#fff"><div><span class="lb"><svg class="ic"><use href="#heart"/></svg>SMO</span><h3>Make your profiles impossible to scroll past.</h3><p>Social Media Optimization polishes your profiles, bios, visuals and posting rhythm so more people discover and follow you.</p><a class="btn" href="#contact">Optimize my profiles <svg class="ic"><use href="#arrow"/></svg></a></div>
+<div class="vz"><div class="cardw"><div class="av"><i></i><span><b>yourbrand</b><small>Digital marketing</small></span></div><div class="st3"><div>248<small>Posts</small></div><div>12.4K<small>Followers</small></div><div>9.1%<small>Engagement</small></div></div><div class="btn b s" style="width:100%;justify-content:center">Follow</div></div></div></article>
+<article class="sk" style="--i:2;--c:var(--yel)"><div><span class="lb"><svg class="ic"><use href="#target"/></svg>SEM</span><h3>Pay only for people ready to buy.</h3><p>Google Ads campaigns built around your budget, targeted to buyers and tracked to real calls, leads and sales.</p><a class="btn b" href="#contact">Launch my ads <svg class="ic"><use href="#arrow"/></svg></a></div>
+<div class="vz"><div class="cardw ad"><small>Ad</small><h4>Your Brand | Free Quote Today</h4><p>Trusted by local customers. Call now for a free consultation.</p><div class="btn b s">Call now</div></div><div class="stk fl" style="right:0;top:6%;background:var(--mint)"><svg class="ic"><use href="#chart"/></svg>CTR 8.2%</div></div></article>
+<article class="sk" style="--i:3;--c:var(--mint)"><div><span class="lb"><svg class="ic"><use href="#mega"/></svg>SMM</span><h3>Scroll-stopping content that sells.</h3><p>Paid and organic campaigns on Instagram, Facebook and LinkedIn that reach the right audience and turn likes into enquiries.</p><a class="btn b" href="#contact">Grow my audience <svg class="ic"><use href="#arrow"/></svg></a></div>
+<div class="vz"><div class="cardw"><div class="av" style="margin-bottom:10px"><i></i><b>yourbrand</b></div><div class="im2"></div><div style="display:flex;gap:10px;color:var(--pink)"><svg class="ic"><use href="#heart"/></svg><svg class="ic"><use href="#chat"/></svg><svg class="ic"><use href="#share"/></svg></div></div><div class="stk fl" style="left:0;bottom:8%;background:var(--pink);color:#fff"><svg class="ic"><use href="#heart"/></svg>+2.4K likes</div></div></article>
+<article class="sk" style="--i:4;--c:var(--vio);--k:#fff"><div><span class="lb"><svg class="ic"><use href="#layout"/></svg>Design</span><h3>Websites people remember.</h3><p>Clean, modern, mobile-first designs with your colours, type and personality, built to win trust in seconds.</p><a class="btn" href="#contact">Design my website <svg class="ic"><use href="#arrow"/></svg></a></div>
+<div class="vz"><div class="cardw"><div class="sw"><i style="background:var(--blue)"></i><i style="background:var(--pink)"></i><i style="background:var(--yel)"></i><i style="background:var(--mint)"></i></div><div class="aa">Aa</div><div class="sc3" style="margin-top:12px"><i></i><i></i><i></i></div></div></div></article>
+<article class="sk" style="--i:5;--c:var(--ink);--k:#fff"><div><span class="lb"><svg class="ic"><use href="#code"/></svg>Development</span><h3>Built fast. Built to rank.</h3><p>Secure, quick-loading websites and online stores with SEO built in from day one, so they look great and perform even better.</p><a class="btn" href="#contact">Build my website <svg class="ic"><use href="#arrow"/></svg></a></div>
+<div class="vz"><div class="cardw cd" style="background:#1b1a45;border-color:#fff"><span class="p">const</span> site = <span class="y">build</span>({<br>&nbsp;&nbsp;speed: <span class="m">"fast"</span>,<br>&nbsp;&nbsp;seo: <span class="m">true</span>,<br>&nbsp;&nbsp;mobile: <span class="m">true</span><br>});<br><span class="p">await</span> site.<span class="y">launch</span>();</div><div class="stk fl" style="right:0;bottom:6%;background:var(--mint)"><svg class="ic"><use href="#check"/></svg>Deployed</div></div></article>
+</div></section>
+
+<section class="cnt"><div class="wrap">
+<div class="hd rv" style="color:#fff"><h2>One team. Every channel. Clear results.</h2></div>
+<div class="cg"><div class="rv"><b data-n="6">0</b><span>Core services</span></div><div class="rv" style="--d:.08s"><b data-n="24" data-x="h">0</b><span>Reply time</span></div><div class="rv" style="--d:.16s"><b data-n="12" data-x="x">0</b><span>Reports every year</span></div><div class="rv" style="--d:.24s"><b data-n="100" data-x="%">0</b><span>Custom strategies</span></div></div>
+<div class="pills"><span><svg class="ic"><use href="#check"/></svg>Goal-first strategy</span><span><svg class="ic"><use href="#check"/></svg>Transparent reporting</span><span><svg class="ic"><use href="#check"/></svg>White-hat methods only</span><span><svg class="ic"><use href="#check"/></svg>Fast, friendly support</span></div>
+</div></section>
+
+<section class="show wrap" id="work"><div class="hd rv"><h2>Websites that stop the scroll</h2><p>Your website is your busiest salesperson. We make it bold, fast and built to convert.</p></div>
+<div class="persp"><div class="b3" id="b3"><div class="t"><i></i><i></i><i></i><span>yourbrand.com</span></div><div class="sx"><nav><b>YourBrand</b><i><s></s><s></s><s></s></i></nav><div class="sh"><div><h4>Grow your <em>business</em> online</h4><div class="l" style="width:90%"></div><div class="l" style="width:70%"></div><span class="bt">Get started</span></div><div class="hi"></div></div><div class="sc3"><i></i><i></i><i></i></div></div></div></div></section>
+
+<div class="band p" aria-hidden="true"><div id="m2"><span>Get seen <em>✦</em> Get clicked <em>✦</em> Get customers <em>✦</em> Get seen <em>✦</em> Get clicked <em>✦</em> Get customers <em>✦</em></span><span>Get seen <em>✦</em> Get clicked <em>✦</em> Get customers <em>✦</em> Get seen <em>✦</em> Get clicked <em>✦</em> Get customers <em>✦</em></span></div></div>
+
+<section class="proc wrap" id="process"><div class="hd rv"><h2>Our process, made simple</h2><p>Four steps from first call to measurable growth.</p></div>
+<div class="pg"><div class="pc rv"><svg class="ic"><use href="#search"/></svg><h3>Audit</h3><p>We study your website, competitors and keywords to find the quickest wins.</p></div>
+<div class="pc rv" style="--d:.08s"><svg class="ic"><use href="#file"/></svg><h3>Strategy</h3><p>A clear plan for SEO, social and ads, matched to your goals and budget.</p></div>
+<div class="pc rv" style="--d:.16s"><svg class="ic"><use href="#zap"/></svg><h3>Execute</h3><p>Pages, posts, campaigns and fixes go live, fast and on brand.</p></div>
+<div class="pc rv" style="--d:.24s"><svg class="ic"><use href="#chart"/></svg><h3>Grow</h3><p>Monthly reports show what worked. Then we scale it.</p></div></div></section>
+
+<section class="faq wrap" id="faq"><div class="hd rv"><h2>Got questions?</h2><p>Quick answers to the things we hear most.</p></div>
+<div class="fq rv"><details><summary>How long does SEO take to show results?<svg class="ic"><use href="#plus"/></svg></summary><p>Most websites see movement within 3 to 6 months, depending on competition and website condition. Paid ads can bring traffic much sooner.</p></details>
+<details><summary>Which service should I start with?<svg class="ic"><use href="#plus"/></svg></summary><p>Need leads fast? Start with Google Ads. Want lasting growth? Start with SEO and a strong website. Our free audit shows your best first move.</p></details>
+<details><summary>Do you build websites from scratch?<svg class="ic"><use href="#plus"/></svg></summary><p>Yes. We design and develop custom websites and online stores, and can also redesign or fix an existing one.</p></details>
+<details><summary>Will I get regular reports?<svg class="ic"><use href="#plus"/></svg></summary><p>Yes. Every month you get a clear report on traffic, leads, rankings and our next actions.</p></details></div></section>
+
+<section class="cta2" id="contact"><div class="wrap cg2">
+<div><h2>Let us grow your brand.</h2><p class="lead">Tell us about your business and get a free website and SEO audit. We reply within 24 hours.</p><div class="ci"><a href="mailto:hello@yourdomain.com"><svg class="ic"><use href="#mail"/></svg>hello@yourdomain.com</a><a href="https://wa.me/910000000000"><svg class="ic"><use href="#chat"/></svg>Chat on WhatsApp</a></div></div>
+<form id="f"><label>Your name<input name="n" required placeholder="Full name"></label><label>Email<input type="email" name="e" required placeholder="you@company.com"></label>
+<label>Service needed<select name="s"><option>SEO</option><option>SMO</option><option>SEM (Google Ads)</option><option>SMM</option><option>Website Designing</option><option>Website Development</option><option>Not sure yet</option></select></label>
+<label>Message<textarea name="m" placeholder="Tell us about your goals"></textarea></label><button class="btn b" type="submit" style="justify-content:center">Send enquiry <svg class="ic"><use href="#arrow"/></svg></button></form>
+</div></section>
+</main>
+
+<footer><div class="wrap"><div class="fg">
+<div><a class="logo" href="#top"><span class="lm">AR</span>Digital</a><p>A full-service digital marketing agency for SEO, social media, ads and websites.</p></div>
+<div><h4>Services</h4><ul><li><a href="#services">SEO</a></li><li><a href="#services">SMO and SMM</a></li><li><a href="#services">SEM</a></li><li><a href="#services">Web design and development</a></li></ul></div>
+<div><h4>Company</h4><ul><li><a href="#work">Work</a></li><li><a href="#process">Process</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+<div><h4>Contact</h4><ul><li><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></li><li><a href="https://wa.me/910000000000">WhatsApp</a></li></ul></div></div>
+<div class="big" aria-hidden="true">AR Digital</div>
+<div class="cp"><span>&copy; <span id="yr">2026</span> AR Digital. All rights reserved.</span><span>Made to make brands grow.</span></div></div></footer>
+
+<script>
+var $=function(s){return document.querySelector(s)},A=function(s){return [].slice.call(document.querySelectorAll(s))},rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function cl(v){return Math.max(0,Math.min(1,v))}$('#yr').textContent=new Date().getFullYear();
+var sc=$('#scrub'),words=sc.textContent.trim().split(' '),hot=['Google,','social','website'];sc.innerHTML=words.map(function(w){return '<span class="w'+(hot.indexOf(w)>-1?' h':'')+'">'+w+' </span>'}).join('');var ws=A('.scrub .w'),b3=$('#b3'),lastY=scrollY,vel=0;
+function tick(){var y=scrollY,h=document.documentElement.scrollHeight-innerHeight;$('#bar').style.transform='scaleX('+y/h+')';
+var r=sc.getBoundingClientRect(),p=cl((innerHeight*.8-r.top)/(r.height+innerHeight*.25)),n=p*ws.length*1.05;ws.forEach(function(w,i){w.classList.toggle('on',rm||i<n)});
+if(!rm){var br=b3.getBoundingClientRect(),q=cl((innerHeight-br.top)/(innerHeight*.9));b3.style.setProperty('--rx',(28*(1-q))+'deg');b3.style.setProperty('--sc',.92+.08*q)}
+vel=y-lastY;lastY=y;A('.band div').forEach(function(d){var a=d.getAnimations()[0];if(a)a.playbackRate=1+Math.min(Math.abs(vel)/6,6)})}
+var t=0;addEventListener('scroll',function(){if(!t){t=1;requestAnimationFrame(function(){t=0;tick()})}},{passive:true});addEventListener('resize',tick);tick();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});A('.rv').forEach(function(e){io.observe(e)});
+var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;co.unobserve(e.target);var n=+e.target.dataset.n,x=e.target.dataset.x||'',k=0;(function f(){k+=.03;e.target.textContent=Math.round(n*(1-Math.pow(1-Math.min(k,1),3)))+x;if(k<1)requestAnimationFrame(f)})()})},{threshold:.6});A('[data-n]').forEach(function(e){co.observe(e)});
+var cur=$('#cur'),cx=0,cy=0,tx=0,ty=0;addEventListener('pointermove',function(e){tx=e.clientX;ty=e.clientY;
+var s=$('#scene'),r=s.getBoundingClientRect(),mx=(e.clientX-r.left-r.width/2)/r.width,my=(e.clientY-r.top-r.height/2)/r.height;if(!rm)A('[data-m]').forEach(function(l){var d=+l.dataset.m;l.style.translate=(-mx*d)+'px '+(-my*d)+'px'});
+cur.classList.toggle('big',!!e.target.closest('a,button,summary'))});
+(function m(){cx+=(tx-cx)*.2;cy+=(ty-cy)*.2;cur.style.transform='translate('+cx+'px,'+cy+'px)';requestAnimationFrame(m)})();
+A('.btn').forEach(function(b){b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.translate=((e.clientX-r.left-r.width/2)*.12)+'px '+((e.clientY-r.top-r.height/2)*.2)+'px'});b.addEventListener('pointerleave',function(){b.style.translate=''})});
+$('#f').addEventListener('submit',function(e){e.preventDefault();var f=e.target,b='Name: '+f.n.value+'\nEmail: '+f.e.value+'\nService: '+f.s.value+'\n\n'+f.m.value;location.href='mailto:hello@yourdomain.com?subject='+encodeURIComponent('Enquiry from '+f.n.value)+'&body='+encodeURIComponent(b)});
+</script></body></html>
